@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini TMDB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <header>
+    <h1 id="mainTitle"> The Real Fake TMDB</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="topRatedBtn">Highest rated</button>
+      <button id="popularBtn">Popular</button>
+    </section>
+
+    <section class="search">
+      <input type="text" id="searchInput" placeholder="Search for movies or people">
+      <button id="searchMovieBtn">Search for movie</button>
+      <button id="searchPersonBtn">Search for person</button>
+    </section>
+
+    <section id="results"></section>
+  </main>
+  <div id="error-message"></div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
